@@ -1,6 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
+//Snack 5
+//Il software chiede all'utente di inserire un numero.
+//Se il numero è pari, stampa il numero, se è dispari, stampa il numero successivo.
+
+int numeroUtente;
+Console.WriteLine("Inserisci un numero");
+numeroUtente = int.Parse(Console.ReadLine());
+
+if(numeroUtente %2 ==0)
+{
+    Console.WriteLine( "Il numero utente scelto è " + numeroUtente);
+}
+else
+{
+    int numeroUtente1 = numeroUtente + 1;
+    Console.WriteLine("Il numero utente scelto è " + numeroUtente1);
+}
 
 
+return;
+//////////////
 //Snack4) -Calcola la somma e la media dei numeri da 2 a 10.
 int[] numeri = { 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 int summ = 0;
