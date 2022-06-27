@@ -1,5 +1,36 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//Snack 5
+//Snack 10) - Fai inserire un numero che chiameremo N, all'utente.
+//Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+//Ogni volta che ne crei uno stampalo a schermo.
+
+Console.WriteLine("Inserisci un numero");
+
+int N = int.Parse(Console.ReadLine());
+
+Random random = new Random();
+
+int[] arrayNumeri ;
+
+for(int nArray=0;nArray<N; nArray++)
+{
+    arrayNumeri = new int[10];
+    for (int i = 0; i < arrayNumeri.Length; i++)
+    {
+        arrayNumeri[i] = random.Next(1,101);
+      
+    }
+    for (int i = 0; i < arrayNumeri.Length; i++)
+    {
+        Console.Write(arrayNumeri[i] + "\t ");
+
+    }
+    Console.WriteLine();
+}
+
+
+return;
+///////////////////////
+//Snack 5)
 //Il software chiede all'utente di inserire un numero.
 //Se il numero è pari, stampa il numero, se è dispari, stampa il numero successivo.
 
